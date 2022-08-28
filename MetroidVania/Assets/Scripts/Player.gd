@@ -2,8 +2,10 @@ extends KinematicBody2D#extendendo kinematic body
 
 var velocity = Vector2()#Variavel que vai colocar a velociadade em plano cartesianno
 var moveSpeed = 400#Velocidade de movimento
+var gravity = 3000#Gravidade
 
 func _physics_process(delta):#função que ocorre o tempo todo
+	velocity.y = gravity*delta#Calculo da velocidade em y(gravidade)
 	_get_input()#chamada da função que pega os inputs
 	move_and_slide(velocity)#função necessária para o movimento 
 
