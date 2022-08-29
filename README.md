@@ -4,7 +4,7 @@
 
 ![Godot Engine](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine) 	![Itch.io](https://img.shields.io/badge/Itch-%23FF0B34.svg?style=for-the-badge&logo=Itch.io&logoColor=white)
 
-<img src="https://cdn.discordapp.com/attachments/1004354269014663232/1007345630777188402/pokedex.png" alt="pokedex">
+<img src="https://cdn.discordapp.com/attachments/1004354269014663232/1013823645799428226/unknown.png" alt="pokedex">
 
 > Projeto de um jogo estilo metroidvania sendo feito na engine godot usando como linguagem principal gdscript.
 
