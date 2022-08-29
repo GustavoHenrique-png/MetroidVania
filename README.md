@@ -22,26 +22,33 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* É necessário um navegador
-* As especificações da máquina são as mais básicas, ou seja, aquelas que compoertam um navegador
-* A API consumida foi: `https://pokeapi.co`.
+* Necessário a ferramenta godot para edição do código
+* Necessário OpenGl 2.1 | OpenGl ES 2.0 compatible hardware
+* Para a versão em C# é necessário .NET SDK ou Mono SDK 
 
-## ☕ Usando a Pokedéx
+## ☕ Usando a Godot e o Projeto
 
-Para usar a pokedex, siga estas etapas:
+Para usar a godot, siga estas etapas:
 
 ```
-Apenas abra o arquivo index
+Extraia o arquivo para uma pasta acessivel não é necessário instalação
+```
+Para acessar o projeto, sigas as seguintes etapas:
+```
+Já dentro da engine, procure o projeto na pasta a qul ele pertence
+```
+```
+Abra-o na engine e edite o projeto
 ```
 
-## 📫 Contribuindo para Pokedéx
+## 📫 Contribuindo para o Metroid Vania
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
 Para contribuir com a minha pokedéx, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
 3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin <pokedex> / <local>`
+4. Envie para o branch original: `git push origin <MetroidVania> / <local>`
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
