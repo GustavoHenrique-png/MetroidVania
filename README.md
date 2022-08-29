@@ -12,11 +12,11 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Consumir um pouco mais da API
-- [ ] Alterar o css principalmente do titulo
-- [ ] Alterar também o css dos "cards"
-- [ ] Desacoplar mais o código
-- [ ] Criar um método de busca por nome de pokemon
+- [ ] Adicionar mecânicas de pulo e combate
+- [ ] Adicionar itens coletáveis
+- [ ] Adicionar inimigos
+- [ ] Alterar o mapa levando em consideração o level design
+- [ ] Criar um fundo móvel baseado na movimentação do jogador (parallax)
 
 ## 💻 Pré-requisitos
 
