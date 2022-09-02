@@ -32,7 +32,10 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 Para usar a godot, siga estas etapas:
 
 ```
-Extraia o arquivo para uma pasta acessivel não é necessário instalação
+Baixe e extraia o arquivo para uma pasta acessivel não é necessário instalação
+```
+```
+Abra o executável da Godot
 ```
 Para acessar o projeto, sigas as seguintes etapas:
 ```
