@@ -39,7 +39,7 @@ Abra o executável da Godot
 ```
 Para acessar o projeto, sigas as seguintes etapas:
 ```
-Já dentro da engine, procure o projeto na pasta a qul ele pertence
+Já dentro da engine, localize o projeto nos teus arquivos
 ```
 ```
 Abra-o na engine e edite o projeto
