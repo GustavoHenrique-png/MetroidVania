@@ -9,7 +9,7 @@ onready var raycasts = $raycasts#acessando o nó raycast(no que checa o chão)
 
 func _physics_process(delta):#função que ocorre o tempo todo
 	_get_input()#chamada da função que pega os inputs
-	#_set_animation()#chamada da função que escolhe as animções
+	_set_animation()#chamada da função que escolhe as animções
 	isGrounded = _check_is_grounded()#chamada da função que verifica o chão
 	
 	velocity.y += gravity*delta#calculo da gravidade(gravidade X tempo decorrido)

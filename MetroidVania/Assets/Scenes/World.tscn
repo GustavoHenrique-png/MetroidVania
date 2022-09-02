@@ -1006,3 +1006,9 @@ tile_data = PoolIntArray( 5, 0, 0, 6, 1, 0, 7, 2, 0, 65541, 3, 0, 65542, 4, 0, 6
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 112, 104 )
 collision_mask = 14
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
