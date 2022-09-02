@@ -17,7 +17,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Adicionar inimigos
 - [ ] Alterar o mapa levando em consideração o level design
 - [ ] Criar um fundo móvel baseado na movimentação do jogador (parallax)
-- [] Arrumar um nome melhor que metroid vania
+- [ ] Arrumar um nome melhor que metroid vania
 
 ## 💻 Pré-requisitos
 
