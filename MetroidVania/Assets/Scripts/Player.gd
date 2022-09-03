@@ -45,5 +45,7 @@ func _set_animation(): #função que seta as animações
 		anim = "jumpAnim"
 	elif velocity.x != 0:#se a velocidade for diferente de 0 seta a animação de corrida
 		anim = "runAnim"
+	elif Input.is_action_pressed("attack"):
+		anim = "attkAnim"
 	if $AnimationPlayer.assigned_animation != anim:#?
 		$AnimationPlayer.play(anim)#toca a animação

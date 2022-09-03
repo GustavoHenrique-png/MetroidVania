@@ -287,4 +287,7 @@ enabled = true
 cast_to = Vector2( 0, 16 )
 collision_mask = 8
 
-[node name="Position2D" type="Position2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
