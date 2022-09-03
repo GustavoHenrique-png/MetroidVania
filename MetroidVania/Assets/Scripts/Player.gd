@@ -5,8 +5,9 @@ var moveSpeed = 480#velocidade de movimento do personagem
 var gravity = 1000#força da gravidade
 var jumpForce = -720#força do pulo(gavidade-forçapulo=pulo)
 var isGrounded#variavel que verifica se ta no chão
+const jumpEfect = preload("res://Assets/Prefabs/jumEfect.tscn")
+onready var timer := $Timer as Timer
 onready var raycasts = $raycasts#acessando o nó raycast(no que checa o chão)
-
 
 func _physics_process(delta):#função que ocorre o tempo todo
 	_get_input()#chamada da função que pega os inputs
@@ -28,7 +29,12 @@ func _get_input():#função que pega os imputs do teclado
 
 
 func _input(event):#função de pulo
-	if(event.is_action_pressed("ui_up")and isGrounded):#se foi pressionada e está no chão
+	if(event.is_action_pressed("ui_up")and isGrounded):
+		var pulinho = jumpEfect.instance()#se foi pressionada e está no chão
+		get_parent().add_child(pulinho)
+		pulinho.position = $Position2D.global_position
+		timer.connect("timeout", pulinho, "queue_free")
+		timer.set_wait_time(0.6)
 		velocity.y = jumpForce/2#calculo do pulo
 
 func _check_is_grounded():#função de checagem do pulo
@@ -47,5 +53,8 @@ func _set_animation(): #função que seta as animações
 		anim = "runAnim"
 	elif Input.is_action_pressed("attack"):
 		anim = "attkAnim"
+	elif Input.is_action_pressed("ui_up"):
+		anim = "jumpEfect"
 	if $AnimationPlayer.assigned_animation != anim:#?
 		$AnimationPlayer.play(anim)#toca a animação
+
