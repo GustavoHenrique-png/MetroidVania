@@ -5,8 +5,8 @@ var moveSpeed = 480#velocidade de movimento do personagem
 var gravity = 1000#força da gravidade
 var jumpForce = -720#força do pulo(gavidade-forçapulo=pulo)
 var isGrounded#variavel que verifica se ta no chão
-const jumpEfect = preload("res://Assets/Prefabs/jumEfect.tscn")
-onready var timer := $Timer as Timer
+const jumpEfect = preload("res://Assets/Prefabs/jumEfect.tscn")#instanciando a cena do efeito do pulo
+onready var timer := $Timer as Timer#instanciando um timer
 onready var raycasts = $raycasts#acessando o nó raycast(no que checa o chão)
 
 func _physics_process(delta):#função que ocorre o tempo todo
@@ -25,16 +25,16 @@ func _get_input():#função que pega os imputs do teclado
 	velocity.x = lerp(velocity.x, moveSpeed*moveDirection/2, 0.2)#
 	#Se a velocidade for diferente de zero ele vira o sprite, positivo vira pra direta, negativo pra esquerda
 	if (moveDirection !=0):
-		$Sprite.scale.x = moveDirection
+		$Sprite.scale.x = moveDirection#flipando o sprite de acordo com a direção do player
 
 
 func _input(event):#função de pulo
-	if(event.is_action_pressed("ui_up")and isGrounded):
-		var pulinho = jumpEfect.instance()#se foi pressionada e está no chão
-		get_parent().add_child(pulinho)
-		pulinho.position = $Position2D.global_position
-		timer.connect("timeout", pulinho, "queue_free")
-		timer.set_wait_time(0.6)
+	if(event.is_action_pressed("ui_up")and isGrounded):#se foi pressionada e está no chão
+		var pulinho = jumpEfect.instance()#chamando a cena instanciada pra dentro da função
+		get_parent().add_child(pulinho)#adicionando a cena toda como um filho
+		pulinho.position = $Position2D.global_position#setando a posição onde o nó está
+		timer.connect("timeout", pulinho, "queue_free")#setando o timer para deletar o nó
+		timer.set_wait_time(0.6)#tempo de espera para que o nó seja deletado(usando tempo da animação como parametro)
 		velocity.y = jumpForce/2#calculo do pulo
 
 func _check_is_grounded():#função de checagem do pulo
@@ -51,9 +51,9 @@ func _set_animation(): #função que seta as animações
 		anim = "jumpAnim"
 	elif velocity.x != 0:#se a velocidade for diferente de 0 seta a animação de corrida
 		anim = "runAnim"
-	elif Input.is_action_pressed("attack"):
+	elif Input.is_action_pressed("attack"):#setando animação de ataque
 		anim = "attkAnim"
-	elif Input.is_action_pressed("ui_up"):
+	elif Input.is_action_pressed("ui_up"):#setando input pra animação do efeito
 		anim = "jumpEfect"
 	if $AnimationPlayer.assigned_animation != anim:#?
 		$AnimationPlayer.play(anim)#toca a animação
