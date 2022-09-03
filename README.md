@@ -17,7 +17,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Adicionar inimigos
 - [ ] Alterar o mapa levando em consideração o level design
 - [ ] Criar um fundo móvel baseado na movimentação do jogador (parallax)
-- [] Arrumar um nome melhor que metroid vania
+- [ ] Arrumar um nome melhor que metroid vania
 
 ## 💻 Pré-requisitos
 
@@ -32,11 +32,14 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 Para usar a godot, siga estas etapas:
 
 ```
-Extraia o arquivo para uma pasta acessivel não é necessário instalação
+Baixe e extraia o arquivo para uma pasta acessivel não é necessário instalação
+```
+```
+Abra o executável da Godot
 ```
 Para acessar o projeto, sigas as seguintes etapas:
 ```
-Já dentro da engine, procure o projeto na pasta a qul ele pertence
+Já dentro da engine, localize o projeto nos teus arquivos
 ```
 ```
 Abra-o na engine e edite o projeto
